@@ -109,3 +109,24 @@ header .sub_menu .search .material-symbols-outlined {
 header .sub_menu .search.focused .material-symbols-outlined {
   opacity: 0;
 }
+
+header .main_menu {
+  display: flex;
+}
+header .main_menu .item {
+  cursor: pointer;
+}
+header .main_menu .item .item__name {
+  padding: 10px 20px 34px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+header .main_menu .item:hover .item__name {
+  background-color: #2c2a29;
+  color: #669900;
+  border-radius: 6px 6px 0 0;
+}
+
+header .main_menu .item .item__contents {
+}
