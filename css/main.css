@@ -153,7 +153,7 @@ header .sub-menu .search input:focus {
   width: 190px;
   border-color: #669900;
 }
-header .sub-menu .search .material-symbols-outlined {
+header .sub-menu .search .material-icons {
   height: 24px;
   position: absolute;
   top: 0;
@@ -163,7 +163,7 @@ header .sub-menu .search .material-symbols-outlined {
   transition: 0.4s;
   cursor: pointer;
 }
-header .sub-menu .search.focused .material-symbols-outlined {
+header .sub-menu .search.focused .material-icons {
   opacity: 0;
 }
 header .main-menu {
@@ -356,6 +356,25 @@ header .badges .badge {
 .notice .notice-line .inner .inner__right {
   width: 40%;
   height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.notice .notice-line .inner .inner__right h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+.notice .notice-line .inner .inner__right .toggle-promotion {
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notice .notice-line .inner .inner__right .toggle-promotion .meterial-icons {
+  font-size: 30px;
 }
 
 /*--------- PROMOTION ---------*/
