@@ -394,20 +394,19 @@ header .badges .badge {
   transition: height 0.4s;
 }
 
-.notice .promotion {
-  position: relative;
-  height: 693px;
-  background-color: #f6f5ef;
-}
-
 .notice .promotion .swiper-container {
   width: calc(819px * 3 + 20px);
   height: 553px;
-  background-color: orange;
-  font-size: 200px;
-  text-align: center;
   position: absolute;
   top: 40px;
   left: 50%;
   margin-left: calc((819px * 3 + 20px) / -2);
+}
+.notice .promotion .swiper-slide {
+  position: relative;
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+.notice .promotion .swiper-slide-active {
+  opacity: 1;
 }
