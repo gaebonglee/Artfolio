@@ -24,26 +24,56 @@
     />
     <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
     <meta property="twitter:url" content="https://starbucks.co.kr" />
-    <!-- ICON -->
+    <!--파비콘-->
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
     <link rel="icon" href="./favicon.png" />
+    <!--브라우저 스타일 초기화-->
     <link
-      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!--Google Fonts - 나눔고딕-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--Google Material Icons-->
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
+    <link rel="stylesheet" href="./css/main.css" />
+
     <!--GSAP & ScrollToPlugin-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+      integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+      crossorigin="anonymous"
+    ></script>
+    <!--Swiper-->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"
     />
     <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="./css/main.css" />
+    <!--ScrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <!--Lodash-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+      integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="./js/youtube.js"></script>
+    <script defer src="./js/main.js"></script>
   </head>
   <body>
     <!--ScrollMagic-->
@@ -481,19 +511,4 @@
     </section>
     <!-- NOTICE -->
   </body>
-
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
-    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-  <script src="./js/main.js"></script>
 </html>
