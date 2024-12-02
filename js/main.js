@@ -70,12 +70,20 @@ new Swiper(".promotion .swiper-container", {
   },
 });
 
-function floatingObject(selector) {
+function random(min, max) {
+  return parseFloat((Math.random() * (max - min) + min).toFixed(2));
+}
+
+function floatingObject(selector, delay, size) {
   // gsap.to(요소, 시간, 옵션)
-  gsap.to(selector, 1, {
-    y: 20,
+  gsap.to(selector, random, {
+    y: size,
     repeat: -1, //무한반복
     yoyo: true, //재생된 애니메이션을 다시 역재생
+    ease: Power1.easeInOut,
+    delay: random(0, delay),
   });
 }
-floatingObject(".floating");
+floatingObject(".floating1", 1, 15);
+floatingObject(".floating2", 0.5, 15);
+floatingObject(".floating3", 1.5, 20);
