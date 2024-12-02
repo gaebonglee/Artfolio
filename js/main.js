@@ -69,3 +69,13 @@ new Swiper(".promotion .swiper-container", {
     nextEl: ".promotion .swiper-next",
   },
 });
+
+function floatingObject(selector) {
+  // gsap.to(요소, 시간, 옵션)
+  gsap.to(selector, 1, {
+    y: 20,
+    repeat: -1, //무한반복
+    yoyo: true, //재생된 애니메이션을 다시 역재생
+  });
+}
+floatingObject(".floating");
