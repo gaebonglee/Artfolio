@@ -591,8 +591,8 @@ header .badges .badge {
 .season-product .text-group .description {
   margin-bottom: 15px;
 }
-.season-product.text-group .more {
-}
+/* .season-product.text-group .more {
+} */
 
 /* RESERVE COFFEE */
 .reserve-coffee {
@@ -651,4 +651,39 @@ header .badges .badge {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.reserve-store .inner {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reserve-store .medal {
+  width: 334px;
+  height: 334px;
+  perspective: 600px;
+}
+
+.reserve-store .medal .front,
+.reserve-store .medal .back {
+  width: 334px;
+  height: 334px;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+.reserve-store .medal .front {
+  position: absolute;
+  transform: rotateY(0deg);
+}
+
+.reserve-store .medal:hover .front {
+  transform: rotateY(180deg);
+}
+.reserve-store .medal .back {
+  transform: rotateY(-180deg);
+}
+.reserve-store .medal:hover .back {
+  transform: rotateY(0deg);
 }
