@@ -643,10 +643,10 @@ header .badges .badge {
 .pick-your-favorite .text-group .description {
   margin-bottom: 40px;
 }
-/*     <!-- RESERVE STORE --> */
 
+/* RESERVE STORE */
 .reserve-store {
-  background-image: url(../images/reserve_store_bg.jpg);
+  background-image: url("../images/reserve_store_bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
