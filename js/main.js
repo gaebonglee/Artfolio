@@ -70,6 +70,14 @@ new Swiper(".promotion .swiper-container", {
   },
 });
 
+// AWARDS
+new Swiper(".awards .swiper-container", {
+  autoplay: true,
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 5,
+});
+
 function random(min, max) {
   return parseFloat((Math.random() * (max - min) + min).toFixed(2));
 }
