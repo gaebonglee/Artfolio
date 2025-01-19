@@ -21,7 +21,6 @@ const toTopEl = document.querySelector("#to-top");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    console.log(window.scrollY);
     // gsap.to(요소, 지속시간, 옵션);
     // 배지 숨기기
     if (window.scrollY > 500) {
@@ -85,7 +84,7 @@ new Swiper(".promotion .swiper-container", {
 new Swiper(".awards .swiper-container", {
   autoplay: true,
   loop: true,
-  spaceBetween: 30,
+  spaceBetween: 0,
   slidesPerView: 5,
   navigation: {
     prevEl: ".awards .swiper-prev",
